@@ -14,3 +14,8 @@
 12- Show the file type of iamfile
 13- Creates a symbolic link
 14- Copies HTML files
+100- Moves files starting with uppercase to /tmp/u
+101- Deletes all files in the current working directory that end with ~
+102- Creates directories in the current directory
+103- Lists all files and directories of current directory
+school.mgc- Creates school.mgc used with file to detect School data files
