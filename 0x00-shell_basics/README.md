@@ -9,3 +9,4 @@
 7- Moves the file betty
 8- Deletes the file betty
 9- Deletes the directory myfirstdirectory
+10- Changes to previous directory
