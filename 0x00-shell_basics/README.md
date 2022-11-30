@@ -11,3 +11,4 @@
 9- Deletes the directory myfirstdirectory
 10- Changes to previous directory
 11- Lists all files in current directory and boot directory
+12- Show the file type of iamfile
