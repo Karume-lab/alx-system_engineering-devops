@@ -6,3 +6,4 @@
 4- Displays contents of current directory including hidden files
 5- Display current directory contents: long format, IDs display, hidden files
 6- Creates a my_first_directory
+7- Moves the file betty
