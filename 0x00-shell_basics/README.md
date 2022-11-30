@@ -10,3 +10,4 @@
 8- Deletes the file betty
 9- Deletes the directory myfirstdirectory
 10- Changes to previous directory
+11- Lists all files in current directory and boot directory
