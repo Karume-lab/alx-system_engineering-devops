@@ -12,3 +12,5 @@
 10- Changes to previous directory
 11- Lists all files in current directory and boot directory
 12- Show the file type of iamfile
+13- Creates a symbolic link
+14- Copies HTML files
