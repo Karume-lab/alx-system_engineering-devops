@@ -10,4 +10,9 @@
 9 -> Duplicates the last line of the file 
 10 -> Deletes all the regular files (not the directories) with a .js extension that are present in the current directory and all its subfolders
 11 ->  Write a script that counts the number of directories and sub-directories in the current directory.
-12 -> 
+12 -> Create a script that displays the 10 newest files in the current directory.
+13 -> Create a script that takes a list of words as input and prints only words that appear exactly once.
+14 -> Display lines containing the pattern “root”
+15 -> Display the number of lines that contain the pattern.
+16 -> Display lines containing the pattern “root” and 3 lines after them in the file /etc/passwd.
+17 ->  
