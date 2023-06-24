@@ -1,6 +1,6 @@
 Simple Web Stack
-
-Below is a step-by-step explanation of a simple web stack
+<img src="0-simple_web_stack.drawio.png">
+Below is a step-by-step explanation of a simple web stack based on the image above:
 User Accessing the Website:
 When a user wants to access the website, they enter the URL www.foobar.com in their web browser.
 
