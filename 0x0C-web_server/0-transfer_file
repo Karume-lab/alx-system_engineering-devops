@@ -1,19 +1,26 @@
-#!/usr/bin/env bash
-#copies a file from your local machine to a host machine
-
-if [ $# -lt 3 ];
-then
-   echo "Usage: 0-transfer_file PATH_TO_FILE IP USERNAME PATH_TO_SSH_KEY"
-   exit 1
+#!/bin/bash
+#Secure transfer of a file from source to destination
+# Check if all required parameters are provided
+if [ "$#" -lt 4 ]; then
+    echo "Usage: 0-transfer_file PATH_TO_FILE IP USERNAME PATH_TO_SSH_KEY"
+    exit 1
 fi
 
-local_file="$1"
-host="$2"
-username="$3"
+# Retrieve parameters
+file_path=$1
+server_ip=$2
+username=$3
+ssh_key_path = $4
 
-if [ -z "$4" ];
-then
-    scp -o StrictHostKeyChecking=no "$local_file" "$username@$host":~/
+# Disable strict host key checking
+export SCP_OPTIONS="-o StrictHostKeyChecking=no"
+
+# Transfer the file using scp
+scp -i "$ssh_key_path" $SCP_OPTIONS "$file_path" "$username@$server_ip:~/"
+
+# Check the exit status of scp
+if [ $? -eq 0 ]; then
+    echo "File transfer successful."
 else
-	scp -i "$4" -o StrictHostKeyChecking=no "$local_file" "$username@$host":~/
+    echo "File transfer failed."
 fi
