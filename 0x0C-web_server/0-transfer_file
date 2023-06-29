@@ -10,17 +10,10 @@ fi
 file_path=$1
 server_ip=$2
 username=$3
-ssh_key_path = $4
+ssh_key_path=$4
 
 # Disable strict host key checking
 export SCP_OPTIONS="-o StrictHostKeyChecking=no"
 
 # Transfer the file using scp
 scp -i "$ssh_key_path" $SCP_OPTIONS "$file_path" "$username@$server_ip:~/"
-
-# Check the exit status of scp
-if [ $? -eq 0 ]; then
-    echo "File transfer successful."
-else
-    echo "File transfer failed."
-fi
